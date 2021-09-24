@@ -1,0 +1,17 @@
+Create collection instance
+Append item 123 using my_key_1 as key
+Append item 456 using my_key_2 as key
+Check if collection has a selection (must return false)
+bool(false)
+Select item my_key_1 in collection
+Check if collection has a selection (must return true)
+bool(true)
+Is selection locked?
+bool(false)
+Get selected item key
+string(8) "my_key_1"
+Selected item value
+string(3) "123"
+Lock selection
+Try to select another item, exception must be thrown (due to the selection being locked)
+EXCEPTION: Selection of items has been locked, can not select more items in this collection

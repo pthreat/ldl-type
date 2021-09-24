@@ -1,0 +1,4 @@
+Create collection instance
+Append ActiveStateFilterExampleTest1 (active: true) and ActiveStateFilterExampleTest2 (active: false)
+Filter by active state
+ActiveStateFilterExampleTest1

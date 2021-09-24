@@ -1,0 +1,6 @@
+Append item with key 'a' and value: '123'
+Append item with key: 'b' and value: '456'
+Append item with key: 'c' and value: '789'
+Filter by keys 'a' and 'b' (c must not be there)
+String: 123
+String: 456

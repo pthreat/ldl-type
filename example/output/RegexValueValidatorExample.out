@@ -1,0 +1,12 @@
+In this example, both key and value must comply to regex #[0-9]+#
+
+Create collection instance
+Add element with value: 2 and key: 1
+Add element with value: 3 and key: 2
+Validate KEY:
+Try to add element 111, with key "def" which doesn't matches regex #[0-9]+#
+EXCEPTION: Given value: "def" does not matches regex: "#[0-9]+#"
+
+Validate VALUE:
+Try to add element "def" which doesn't matches regex #[0-9]+#, with key 111
+EXCEPTION: Given value: "def" does not matches regex: "#[0-9]+#"

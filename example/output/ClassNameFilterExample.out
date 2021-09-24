@@ -1,0 +1,18 @@
+Create collection instance
+Iterate through the collection
+
+ClassNameFilterTest1
+ClassNameFilterTest2
+ClassNameFilterTest3
+
+Filter collection by class Test2, ONLY ClassNameFilterTest2 must show up
+
+ClassNameFilterTest2
+Filter collection by classes Test1, Test3
+0 => ClassNameFilterTest1
+2 => ClassNameFilterTest3
+Check filtered collection
+0 => ClassNameFilterTest1
+2 => ClassNameFilterTest3
+Try to filter by class again with class Test3, class Test3 *must show up*
+2 => ClassNameFilterTest3

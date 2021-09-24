@@ -9,11 +9,20 @@ class ClassNameFilteringExample extends ObjectCollection
 
 }
 
-class ClassNameFilterTest1 { }
+class ClassNameFilterTest1 {
+    public function methodToDelete(): void
+    {
 
-class ClassNameFilterTest2 { }
+    }
+}
 
-class ClassNameFilterTest3 { }
+class ClassNameFilterTest2 {
+
+}
+
+class ClassNameFilterTest3 {
+
+}
 
 echo "Create collection instance\n";
 
@@ -53,13 +62,11 @@ foreach($filtered as $key => $item){
     echo "$key => ".\get_class($item)."\n";
 }
 
-echo "Remove one item (0) Test 1 from the filtered collection\n";
+echo "Check filtered collection\n";
 
-$filtered->remove(0);
-
-echo "Try to filter by class again with class Test1, result must be empty\n";
-
-var_dump(count($filtered->filterByClass(ClassNameFilterTest1::class)));
+foreach($filtered as $key => $item){
+    echo "$key => ".\get_class($item)."\n";
+}
 
 echo "Try to filter by class again with class Test3, class Test3 *must show up*\n";
 

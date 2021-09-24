@@ -1,0 +1,4 @@
+Create collection instance
+Add element test with key 123
+Add element test2 with key 123 (again) Exception must be thrown
+EXCEPTION: Item with value '123' already exists in this collection!

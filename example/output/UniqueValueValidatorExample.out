@@ -1,0 +1,6 @@
+Create collection instance
+Add element with value 'test' and key '213'
+Try to add element with value 'some value' and key '213' AGAIN, Exception must be thrown
+EXCEPTION: Item with value '213' already exists in this collection!
+Try to add element test, AGAIN, exception must be thrown
+EXCEPTION: Item with value 'test' already exists in this collection!

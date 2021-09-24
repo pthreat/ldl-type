@@ -1,0 +1,57 @@
+Create collection instance
+Append the following data to the created collection:
+
+array (
+  'my_key_1' => 123,
+  'my_key_2' => 456,
+  'my_key_3' => 789,
+)
+
+Check if collection has a selection (must return false)
+
+bool(false)
+
+Select item my_key_1 in collection
+
+Check if collection has a selection (must return true)
+
+bool(true)
+
+Select item my_key_3 in collection
+
+Obtain count of selected items (must be 2)
+
+Count of selected items is: 2
+
+Lock selection
+
+Remove item with key: my_key_3
+
+Print selected keys, the removed key (my_key_3) must not SHOW up in the selected values
+
+string(17) "my_key_1 => clean"
+
+Print collection keys and values:
+
+string(8) "my_key_1"
+int(123)
+string(8) "my_key_2"
+int(456)
+
+Check if selection is locked (true must be returned):
+
+bool(true)
+
+Try to select item my_key_2, exception must be thrown (due to the selection being locked)
+
+EXCEPTION: Selection has been locked for class: MultiSelectCollectionExample
+
+Print selected keys:
+
+SELECTED | key: my_key_1 , value: clean
+
+Truncate to selected
+
+Print items in collection, only my_key_1 must show up
+
+Item in collection | key: my_key_1 , value: 123

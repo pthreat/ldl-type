@@ -1,0 +1,14 @@
+Create new collection instance which implements ItemAmountValidator
+See appended validators description
+""The amount of items in the collection can NOT be ">" than "5"""
+See removed validators description
+""The amount of items in the collection can NOT be "<" than "3"""
+Add 5 values
+Try to add a sixth value, exception must be thrown
+EXCEPTION: The amount of items in the collection can NOT be ">" than "5"
+Try to remove last appended item, Validator minimum amount of items is set to 3
+Item count is now: 4
+Try to remove last appended item, Validator minimum amount of items is set to 3
+Item count is now: 3
+Try to remove one more item, exception must be thrown
+EXCEPTION: The amount of items in the collection can NOT be "<" than "3"

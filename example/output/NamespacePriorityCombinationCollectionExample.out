@@ -1,0 +1,21 @@
+Create new combined priority and namespace class instance
+Append NSPriority2
+Append NSPriority1
+Try to modify the validation chain (exception must be thrown)
+EXCEPTION: Class LDL\Validators\Chain\Item\Collection\ValidatorChainItemCollection is locked and may not be modified
+Append \stdClass (Must throw exception!)
+EXCEPTION: Value of class "stdClass", does not complies to interface: "LDL\Framework\Base\Contracts\NamespaceInterface"
+Sort by priority ascending:
+1
+2
+
+Sort by priority descending:
+2
+1
+Remove item from collection with key: ns_1
+Lock collection
+Try to remove item with key ns_2 (collection is now locked), exception should be thrown
+EXCEPTION: Class LDL\Type\Collection\AbstractCollection is locked and may not be modified
+
+Filter by regex: #Name 2#
+NS 2 Name 2

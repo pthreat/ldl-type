@@ -24,7 +24,8 @@ class ExceptionCollection extends ObjectCollection implements \JsonSerializable
         foreach($this as $e){
             $result[] = [
                 'class' => get_class($e),
-                'message' => $e->getMessage()
+                'message' => $e->getMessage(),
+                'code' => $e->getCode()
             ];
         }
 

@@ -1,0 +1,22 @@
+Append item with value: '123'
+Append item with value: '123'
+Append item with value: '456'
+Append item with value: (integer) 789, exception must be thrown
+EXCEPTION: Value expected for "LDL\Validators\StringValidator", must be of type string, "integer" was given
+Iterate through elements:
+String: 123
+String: 123
+String: 456
+Get unique values from collection:
+Iterate through uniques values:
+String: 123
+String: 456
+Call Implode:
+
+123,123,456
+Add new element "000" and call implode again
+
+123,123,456,000
+Remove element and call implode again
+
+123,123,456

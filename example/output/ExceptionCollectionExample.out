@@ -1,0 +1,29 @@
+Create ExceptionCollection instance
+
+Append exception MyException
+
+Append integer number 99, (exception must be thrown)
+
+EXCEPTION: Value expected for "LDL\Validators\ObjectValidator", must be an Object, "integer" was given
+
+Append Object that is not an Exception, (exception must be thrown)
+
+EXCEPTION: Value of class "SimpleClass", does not complies to interface: "Throwable"
+
+Convert list of exceptions to JSON
+
+[{"class":"MyException","message":"MyExceptionMessage","code":0}]
+
+Convert list of exceptions to Array
+
+array(1) {
+  [0]=>
+  array(3) {
+    ["class"]=>
+    string(11) "MyException"
+    ["message"]=>
+    string(18) "MyExceptionMessage"
+    ["code"]=>
+    int(0)
+  }
+}

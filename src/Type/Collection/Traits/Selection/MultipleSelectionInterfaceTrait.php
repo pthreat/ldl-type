@@ -152,7 +152,7 @@ trait MultipleSelectionInterfaceTrait
 
         $this->getBeforeRemove()->append(function($collection, $item, $key){
             try{
-                $this->_tMultiSelect->remove($key);
+                $this->_tMultiSelect->removeByKey($key);
             }catch(LockingException $e){
                 $this->_tMultiSelect = (new StringCollection())
                     ->appendMany(

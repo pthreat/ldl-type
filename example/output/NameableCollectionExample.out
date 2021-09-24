@@ -1,0 +1,20 @@
+Create new Nameable collection class instance
+Append NameableClass1
+Append NameableClass2
+Filter by name: Name1
+Found 1 elements
+Filter by namespace regex: #.*2$#
+Found 1 elements
+Filter by namespace regex: #Name.*$#
+Found 2 elements
+Filter by names: [Name1, Name2]
+Found 2 elements
+Auto validate
+Filter by name in Auto mode: Name1
+Found 1 elements
+Filter by namespace regex in Auto mode: #.*2$#
+Found 1 elements
+Filter by namespace regex in Auto mode: #Name.*$#
+Found 2 elements
+Filter by names: [Name1, Name2] in Auto mode
+Found 2 elements

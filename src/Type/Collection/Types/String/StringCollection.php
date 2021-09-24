@@ -3,6 +3,7 @@
 namespace LDL\Type\Collection\Types\String;
 
 use LDL\Framework\Base\Collection\Contracts\CollectionInterface;
+use LDL\Framework\Helper\ComparisonOperatorHelper;
 use LDL\Type\Collection\AbstractCollection;
 use LDL\Type\Collection\Interfaces\Validation\HasAppendValueValidatorChainInterface;
 use LDL\Type\Collection\Traits\Validator\AppendValueValidatorChainTrait;
@@ -43,10 +44,30 @@ class StringCollection extends AbstractCollection implements HasAppendValueValid
         return parent::append($item, $key);
     }
 
-    public function remove($offset) : CollectionInterface
+    public function removeByKey(
+        $key,
+        string $operator = ComparisonOperatorHelper::OPERATOR_SEQ,
+        string $order = ComparisonOperatorHelper::COMPARE_LTR
+    ) : int
     {
         $this->imploded = null;
-        return parent::remove($offset);
+        return parent::removeByKey($key, $operator, $order);
+    }
+
+    public function removeByValue(
+        $value,
+        string $operator = ComparisonOperatorHelper::OPERATOR_SEQ,
+        string $order = ComparisonOperatorHelper::COMPARE_LTR
+    ) : int
+    {
+        $this->imploded = null;
+        return parent::removeByValue($value, $operator, $order);
+    }
+
+    public function removeLast(): CollectionInterface
+    {
+        $this->imploded = null;
+        return parent::removeLast();
     }
 
     public function toUnique(): UniqueStringCollection

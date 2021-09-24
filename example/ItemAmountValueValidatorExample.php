@@ -12,7 +12,7 @@ use LDL\Type\Collection\Traits\Validator\RemoveValueValidatorChainTrait;
 use LDL\Type\Collection\Validator\Exception\AmountValidatorException;
 use LDL\Validators\Chain\Dumper\ValidatorChainHumanDumper;
 
-class ItemAmountValueValueValidatorExample extends AbstractCollection implements HasAppendValueValidatorChainInterface, HasRemoveValueValidatorChainInterface
+class ItemAmountValueValidatorExample extends AbstractCollection implements HasAppendValueValidatorChainInterface, HasRemoveValueValidatorChainInterface
 {
     use AppendValueValidatorChainTrait;
     use RemoveValueValidatorChainTrait;
@@ -33,7 +33,7 @@ class ItemAmountValueValueValidatorExample extends AbstractCollection implements
 }
 
 echo "Create new collection instance which implements ItemAmountValidator\n";
-$obj = new ItemAmountValueValueValidatorExample();
+$obj = new ItemAmountValueValidatorExample();
 
 echo "See appended validators description\n";
 dump(ValidatorChainHumanDumper::dump($obj->getAppendValueValidatorChain()));

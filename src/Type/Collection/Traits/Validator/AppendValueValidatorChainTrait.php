@@ -20,7 +20,7 @@ trait AppendValueValidatorChainTrait
         }
 
         if(null === $class){
-            $class=AndValidatorChain::class;
+            $class = AndValidatorChain::class;
         }
 
         if(!class_exists($class)){
@@ -39,7 +39,7 @@ trait AppendValueValidatorChainTrait
 
         $this->_tAppendValueValidatorChain = new $class($validators);
 
-        $this->getBeforeAppend()->append(function($collection, $item, $key){
+        $this->getBeforeResolveKey()->append(function($collection, $item, $key){
             $this->_tAppendValueValidatorChain->validate($item, $key, $collection);
         });
 

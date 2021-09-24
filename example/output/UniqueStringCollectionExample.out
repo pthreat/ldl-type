@@ -1,0 +1,7 @@
+Create unique string collection instance
+Append item with value: '123'
+Append item with value: '234'
+Append item with value: (integer) 789, exception must be thrown
+EXCEPTION: Value expected for "LDL\Validators\StringValidator", must be of type string, "integer" was given
+Append item again with value: '123', exception must be thrown
+EXCEPTION: Item with value '123' already exists in this collection!

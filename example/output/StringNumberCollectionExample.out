@@ -1,0 +1,7 @@
+Create string/number collection instance
+Append string item: 'hello'
+Append number item: 123
+Try to add an object, exception must be thrown
+
+EXCEPTION: Value expected for "LDL\Validators\NumericValidator", must be of type numeric; "object" was given
+Value expected for "LDL\Validators\StringValidator", must be of type string, "object" was given

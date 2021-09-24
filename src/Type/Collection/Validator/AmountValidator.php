@@ -167,7 +167,7 @@ class AmountValidator implements ValidatorInterface, ValidatorHasConfigInterface
                 return $total <= $this->amount;
 
             default:
-                throw new \RuntimeException('Given operator is invalid (WTF?)');
+                throw new \RuntimeException("Given operator: '{$this->operator}' is invalid");
         }
     }
 }

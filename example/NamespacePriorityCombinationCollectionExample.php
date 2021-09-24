@@ -125,7 +125,7 @@ foreach($collection->sortByPriority(PrioritySortingInterface::SORT_DESCENDING) a
 
 echo "Remove item from collection with key: ns_1\n";
 
-$collection->remove('ns_1');
+$collection->removeByKey('ns_1');
 
 echo "Lock collection\n";
 $collection->lock();
@@ -134,7 +134,7 @@ echo "Try to remove item with key ns_2 (collection is now locked), exception sho
 
 try{
 
-    $collection->remove('ns_2');
+    $collection->removeByKey('ns_2');
 
 }catch(LockingException $e){
 

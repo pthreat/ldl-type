@@ -1,0 +1,12 @@
+Create new PriorityCollectionExample class instance
+Append PriorityClass2
+Append PriorityClass1
+Append \stdClass (Must throw exception!)
+EXCEPTION: Value of class "stdClass", does not complies to interface: "LDL\Framework\Base\Contracts\PriorityInterface"
+Sort by priority ascending:
+1
+2
+
+Sort by priority descending:
+2
+1

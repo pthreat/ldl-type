@@ -1,0 +1,18 @@
+Create MyIntegerCollection instance
+
+"(LDL\Validators\IntegerValidator && (LDL\Validators\NumericComparisonValidator && LDL\Validators\NumericComparisonValidator))"
+Append string item: 'hello' (exception must be thrown)
+
+EXCEPTION: Value expected for "LDL\Validators\IntegerValidator", must be of type integer, "string" was given
+
+Append integer number 200, (no error must show up)
+
+Append integer number 99, (exception must be thrown)
+
+EXCEPTION: Value must be ">=" than "100"; "99" was given.
+
+Append integer number 599, (no error must show up)
+
+Append integer number 600, (exception must be thrown)
+
+EXCEPTION: Value must be "<=" than "599"; "600" was given.

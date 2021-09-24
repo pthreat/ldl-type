@@ -1,0 +1,20 @@
+Create new Namespaceable collection class instance
+Append NamespaceClass1
+Append NamespaceClass2
+Filter by namespace regex: #.*2$#
+Found 1 elements
+Filter by namespace: "Namespace 1"
+Found 1 elements
+Filter by namespaces: [Namespace1, Namespace2]
+Found 2 elements
+Filter by namespace and name: Namespace 1, Name
+Found 1 elements
+
+
+Auto filter
+Filter by namespace: "Namespace 1" in Auto mode
+Found 1 elements
+Filter by regex #.*2# in Auto mode:
+Found 1 elements
+Filter by namespaces: [Namespace 1, Namespace 2] in Auto mode
+Found 2 elements

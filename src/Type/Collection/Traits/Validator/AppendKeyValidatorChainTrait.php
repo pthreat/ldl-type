@@ -58,7 +58,7 @@ trait AppendKeyValidatorChainTrait
 
                 $this->validatorChain = new $class;
 
-                $this->getBeforeAppend()->append(function($collection, $item, $key){
+                $this->getBeforeResolveKey()->append(function($collection, $item, $key){
                     $this->validatorChain->validate($item, $key, $collection);
                 });
             }
@@ -69,7 +69,7 @@ trait AppendKeyValidatorChainTrait
             }
         };
 
-        $this->getBeforeAppend()->append(function($collection, $item, $key){
+        $this->getBeforeResolveKey()->append(function($collection, $item, $key){
             $this->_tAppendKeyCollection->append($key);
         });
 

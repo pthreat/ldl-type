@@ -1,0 +1,38 @@
+Create String Collection
+Append item with value: '123'
+Append item with value: '456'
+
+Convert String Collection to Array
+array(2) {
+  [0]=>
+  string(3) "123"
+  [1]=>
+  string(3) "456"
+}
+Create std object with 'test' property and value 'Hello World'
+Create StdStringCollection
+Append std object and 'string' string
+Lock collection
+Change 'test' value of the std object to 'Hello Earth'
+Change string value
+Value of 'test' must be 'Hello World' because the collection is Locked
+string(11) "Hello World"
+Value of string must be 'string' because the collection is Locked
+array(2) {
+  [0]=>
+  string(12) "stdObjectKey"
+  [1]=>
+  int(1)
+}
+string(6) "string"
+
+Convert StdCollection to Array
+array(2) {
+  ["stdObjectKey"]=>
+  object(stdClass)#112 (1) {
+    ["test"]=>
+    string(11) "Hello World"
+  }
+  [1]=>
+  string(6) "string"
+}

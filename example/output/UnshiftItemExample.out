@@ -1,0 +1,14 @@
+Append item with value: '123'
+Append item with value: '456'
+Iterate through elements:
+String: 123
+String: 456
+Call unshift, append "I am first" string
+Iterate through elements (I am first must appear FIRST and have the key: c):
+Key: c, String: I am first
+Key: b, String: 123
+Key: a, String: 456
+First key is (c must be the output):
+c
+Last key is (a must be the output):
+a
